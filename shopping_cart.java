@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class shopping_cart {
 
+
     public static void main(String[] args) {
      
         String[] productNames = {"Laptop", "Smartphone", "Headphones", "Smartwatch"};
@@ -14,18 +15,18 @@ public class shopping_cart {
 
         while (true) {
             System.out.println("\nWelcome to Simple E-Commerce System!");
-            System.out.println("1. View Products");
+            System.out.println("1. View available Products");
             System.out.println("2. View Cart");
             System.out.println("3. Add Product to Cart");
             System.out.println("4. Remove Product from Cart");
             System.out.println("5. Checkout");
             System.out.println("6. Exit");
-            System.out.print("Choose an option: ");
+            System.out.print(" Please choose an option: ");
             int choice = scanner.nextInt();
 
             switch (choice) {
                 case 1 -> {
-                    System.out.println("\nAvailable Products:");
+                    System.out.println("\nAvailable Products :");
                     for (int i = 0; i < productNames.length; i++) {
                         System.out.printf("%d. %s - $%.2f%n", i + 1, productNames[i], productPrices[i]);
                     }
